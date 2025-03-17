@@ -1,0 +1,150 @@
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #31363f;
+}
+
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+#mother {
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color: #09122c; /* Sidebar color */
+}
+
+#sidebar-content {
+  height: 100vh;
+  width: 50px;
+  background-color: #09122c; /* Sidebar content color */
+}
+
+.line-vertical {
+  height: 100vh;
+  width: 20px;
+  background-color: #09122c; /* Sidebar content color */
+  border: #e17564 solid 3px; /* Border color */
+  border-bottom: 0;
+  border-top: 0;
+}
+
+main {
+  margin-left: 75px;
+}
+
+.navbar {
+  background-color: #09122c; /* Navbar color */
+  color: #e17564; /* Text color */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #e17564; /* Text color */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #e17564; /* Text color */
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: #872341; /* Hover color */
+}
+
+section {
+  height: 100vh;
+}
+
+#card-profiles {
+  margin: 10px;
+  height: fit-content;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly; /* Adjusts spacing to be even on both sides */
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #09122c; /* Card background color */
+  color: #e17564; /* Card text color */
+  transition: box-shadow 0.3s ease; /* Add transition for shadow effect */
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(23, 173, 199, 0.3); /* Add shadow effect on hover */
+}
+
+.card img {
+  width: 250px;
+  height: 140px;
+  border-radius: 5px;
+  object-fit: cover; /* Adjusts the position of the second image */
+  object-position: center 25%;
+}
+
+.card img.profile-image-2 {
+  object-position: center; /* Adjusts the position of the second image */
+}
+
+.card img.profile-image-3 {
+  object-position: center 10%; /* Adjusts the position of the second image */
+}
+
+.card img.profile-image-4 {
+  object-position: center 20%; /* Adjusts the position of the second image */
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    margin-bottom: 5px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

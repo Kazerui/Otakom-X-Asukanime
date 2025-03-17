@@ -1,0 +1,107 @@
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* body,
+html {
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Menghilangkan scrollbar di Chrome, Safari, dan Opera
+} */
+
+#mother {
+  color: #fff;
+  background-color: #31363f;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+}
+
+#sidebar-content {
+  height: 100vh;
+  width: 50px;
+  background-color: #09122c; /* Sidebar color */
+}
+
+.line-vertical {
+  height: 100vh;
+  width: 20px;
+  background-color: #09122c; /* Sidebar color */
+  border: #e17564 solid 3px; /* Border color */
+  border-bottom: 0;
+  border-top: 0;
+}
+
+main {
+  margin-left: 75px;
+}
+
+.navbar {
+  background-color: #09122c; /* Navbar color */
+  color: #e17564; /* Text color */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #e17564; /* Text color */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #e17564; /* Text color */
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: #872341; /* Hover color */
+}
+
+section {
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    margin-bottom: 5px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
